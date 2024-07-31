@@ -30,3 +30,25 @@ sudo apt-get update
 ```
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ```
+## Запуск Docker compose
+### Создаём и переходим в папку Zabbix
+```
+mkdir Zabbix
+```
+```
+cd Zabbix
+```
+### Скачиваем конфигурационный файл
+```
+sudo wget https://raw.githubusercontent.com/maf1oznic/multidomain-zabbix/main/zabbix-docker-compose.yml
+```
+### Запускаем контейнеры
+```
+sudo docker compose -f zabbix-docker-compose.yml up -d
+```
+### Проверим состояние контейнеров
+```
+sudo docker ps -a
+```
+### Веб интерфейсы должны запустится на портах 82, 83 и 84. Стандартные данные для входа Admin:zabbix
+## Для удобства выдачи сертификатов можно использовать Nginx Proxy Manager: [документация](https://nginxproxymanager.com/guide/)

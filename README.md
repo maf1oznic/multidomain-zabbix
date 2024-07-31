@@ -51,4 +51,5 @@ sudo docker compose -f zabbix-docker-compose.yml up -d
 sudo docker ps -a
 ```
 ### Веб-интерфейсы должны запуститься на портах 82, 83 и 84. Стандартные данные для входа: Admin:zabbix
+### Если видите ошибку "Database error", нужно подождать.
 ## Для удобства выдачи сертификатов можно использовать Nginx Proxy Manager: [документация](https://nginxproxymanager.com/guide/)

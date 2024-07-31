@@ -1,5 +1,5 @@
 # multidomain-zabbix
-## Установим Docker и Docker compose по инструкции c [оффициального сайта](https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository)
+## Установим Docker и Docker compose по инструкции c [официального сайта](https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository)
 ### Добавляем официальный GPG-ключ Docker:
 ```
 sudo apt-get update
@@ -50,5 +50,5 @@ sudo docker compose -f zabbix-docker-compose.yml up -d
 ```
 sudo docker ps -a
 ```
-### Веб интерфейсы должны запустится на портах 82, 83 и 84. Стандартные данные для входа Admin:zabbix
+### Веб-интерфейсы должны запуститься на портах 82, 83 и 84. Стандартные данные для входа: Admin:zabbix
 ## Для удобства выдачи сертификатов можно использовать Nginx Proxy Manager: [документация](https://nginxproxymanager.com/guide/)

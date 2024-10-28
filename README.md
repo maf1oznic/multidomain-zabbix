@@ -1,5 +1,10 @@
 # multidomain-zabbix
 ## Установим Docker и Docker compose по инструкции c [официального сайта](https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository)
+### Установка через скрипт:
+```
+curl -fsSL https://get.docker.com | bash
+```
+### Обычная установка
 ### Добавляем официальный GPG-ключ Docker:
 ```
 sudo apt-get update

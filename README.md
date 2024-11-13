@@ -4,6 +4,9 @@
 ```
 curl -fsSL https://get.docker.com | bash
 ```
+```
+sudo usermod -aG docker $USER
+```
 ### Обычная установка
 ### Добавляем официальный GPG-ключ Docker:
 ```
